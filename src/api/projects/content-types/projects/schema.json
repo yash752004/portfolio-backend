@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portfolioprojects",
+  "info": {
+    "singularName": "projects",
+    "pluralName": "portfolioprojects",
+    "displayName": "Projects"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titile": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "hasLiveLink": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "category": {
+      "type": "string",
+      "default": "Web App",
+      "required": true
+    },
+    "techtools": {
+      "type": "component",
+      "component": "projects.techstack",
+      "repeatable": true
+    },
+    "liveLink": {
+      "type": "string"
+    }
+  }
+}

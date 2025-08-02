@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portfoliomy_services",
+  "info": {
+    "singularName": "my-services",
+    "pluralName": "portfoliomy-services",
+    "displayName": "My Services"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "features": {
+      "type": "component",
+      "component": "sub-feature.my-services",
+      "repeatable": true
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_projects_techstacks",
+  "info": {
+    "displayName": "techstack",
+    "icon": "code"
+  },
+  "options": {},
+  "attributes": {
+    "techtools": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

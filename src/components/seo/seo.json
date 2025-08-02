@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_seo_seos",
+  "info": {
+    "displayName": "Seo"
+  },
+  "options": {},
+  "attributes": {
+    "keywords": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

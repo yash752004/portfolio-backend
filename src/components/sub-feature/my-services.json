@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sub_feature_my_services",
+  "info": {
+    "displayName": "My Services",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "features": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}
