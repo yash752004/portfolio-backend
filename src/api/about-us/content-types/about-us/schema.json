@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "portfolioabout_us",
+  "info": {
+    "singularName": "about-us",
+    "pluralName": "portfolioabout-us",
+    "displayName": "AboutUs"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "aboutUS": {
+      "type": "richtext",
+      "required": true
+    },
+    "projectCompleted": {
+      "type": "string",
+      "required": true
+    },
+    "clientSatisfaction": {
+      "type": "string",
+      "required": true
+    },
+    "clientCount": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

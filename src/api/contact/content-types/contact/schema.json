@@ -24,6 +24,27 @@
       "type": "richtext",
       "required": true,
       "default": "Ahmedabad, India"
+    },
+    "name": {
+      "type": "string",
+      "default": "Yash Patel",
+      "required": true
+    },
+    "githubURL": {
+      "type": "string",
+      "required": true
+    },
+    "linkdinURL": {
+      "type": "string",
+      "required": true
+    },
+    "profileIMG": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }
