@@ -21,6 +21,36 @@ export interface SeoSeo extends Struct.ComponentSchema {
   };
 }
 
+export interface StakBackendStack extends Struct.ComponentSchema {
+  collectionName: 'components_stak_backend_stacks';
+  info: {
+    displayName: 'Backend Stack';
+  };
+  attributes: {
+    backEndStack: Schema.Attribute.String;
+  };
+}
+
+export interface StakCloudEndStack extends Struct.ComponentSchema {
+  collectionName: 'components_stak_cloud_end_stacks';
+  info: {
+    displayName: 'cloudEnd Stack';
+  };
+  attributes: {
+    clouStack: Schema.Attribute.String;
+  };
+}
+
+export interface StakFrontendStack extends Struct.ComponentSchema {
+  collectionName: 'components_stak_frontend_stacks';
+  info: {
+    displayName: 'Frontend Stack';
+  };
+  attributes: {
+    frontEndStack: Schema.Attribute.String;
+  };
+}
+
 export interface SubFeatureMyServices extends Struct.ComponentSchema {
   collectionName: 'components_sub_feature_my_services';
   info: {
@@ -37,6 +67,9 @@ declare module '@strapi/strapi' {
     export interface ComponentSchemas {
       'projects.techstack': ProjectsTechstack;
       'seo.seo': SeoSeo;
+      'stak.backend-stack': StakBackendStack;
+      'stak.cloud-end-stack': StakCloudEndStack;
+      'stak.frontend-stack': StakFrontendStack;
       'sub-feature.my-services': SubFeatureMyServices;
     }
   }

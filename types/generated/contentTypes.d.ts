@@ -553,6 +553,36 @@ export interface ApiProjectsProjects extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiTechStackTechStack extends Struct.CollectionTypeSchema {
+  collectionName: 'tech_stacks';
+  info: {
+    displayName: 'TechStack';
+    pluralName: 'tech-stacks';
+    singularName: 'tech-stack';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    backEnd: Schema.Attribute.Component<'stak.backend-stack', true>;
+    cloudDev: Schema.Attribute.Component<'stak.cloud-end-stack', true>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    frontEnd: Schema.Attribute.Component<'stak.frontend-stack', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::tech-stack.tech-stack'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface PluginContentReleasesRelease
   extends Struct.CollectionTypeSchema {
   collectionName: 'strapi_releases';
@@ -1067,6 +1097,7 @@ declare module '@strapi/strapi' {
       'api::meta-data.meta-data': ApiMetaDataMetaData;
       'api::my-services.my-services': ApiMyServicesMyServices;
       'api::projects.projects': ApiProjectsProjects;
+      'api::tech-stack.tech-stack': ApiTechStackTechStack;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

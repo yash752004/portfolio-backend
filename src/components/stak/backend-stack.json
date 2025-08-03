@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_stak_backend_stacks",
+  "info": {
+    "displayName": "Backend Stack"
+  },
+  "options": {},
+  "attributes": {
+    "backEndStack": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

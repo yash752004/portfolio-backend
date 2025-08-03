@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_stak_frontend_stacks",
+  "info": {
+    "displayName": "Frontend Stack"
+  },
+  "options": {},
+  "attributes": {
+    "frontEndStack": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

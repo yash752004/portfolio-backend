@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_stak_cloud_end_stacks",
+  "info": {
+    "displayName": "cloudEnd Stack"
+  },
+  "options": {},
+  "attributes": {
+    "clouStack": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
