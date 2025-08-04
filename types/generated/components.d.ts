@@ -31,6 +31,16 @@ export interface StakBackendStack extends Struct.ComponentSchema {
   };
 }
 
+export interface StakBuildAndDeploymen extends Struct.ComponentSchema {
+  collectionName: 'components_stak_build_and_deploymen';
+  info: {
+    displayName: 'Build & Deploymen';
+  };
+  attributes: {
+    build_deployment: Schema.Attribute.String;
+  };
+}
+
 export interface StakCloudEndStack extends Struct.ComponentSchema {
   collectionName: 'components_stak_cloud_end_stacks';
   info: {
@@ -38,6 +48,26 @@ export interface StakCloudEndStack extends Struct.ComponentSchema {
   };
   attributes: {
     clouStack: Schema.Attribute.String;
+  };
+}
+
+export interface StakCms extends Struct.ComponentSchema {
+  collectionName: 'components_stak_cms';
+  info: {
+    displayName: 'CMS';
+  };
+  attributes: {
+    cms: Schema.Attribute.String;
+  };
+}
+
+export interface StakDataBase extends Struct.ComponentSchema {
+  collectionName: 'components_stak_data_bases';
+  info: {
+    displayName: 'dataBase';
+  };
+  attributes: {
+    dataBase: Schema.Attribute.String;
   };
 }
 
@@ -68,7 +98,10 @@ declare module '@strapi/strapi' {
       'projects.techstack': ProjectsTechstack;
       'seo.seo': SeoSeo;
       'stak.backend-stack': StakBackendStack;
+      'stak.build-and-deploymen': StakBuildAndDeploymen;
       'stak.cloud-end-stack': StakCloudEndStack;
+      'stak.cms': StakCms;
+      'stak.data-base': StakDataBase;
       'stak.frontend-stack': StakFrontendStack;
       'sub-feature.my-services': SubFeatureMyServices;
     }

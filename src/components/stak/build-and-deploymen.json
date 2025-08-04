@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_stak_build_and_deploymen",
+  "info": {
+    "displayName": "Build & Deploymen"
+  },
+  "options": {},
+  "attributes": {
+    "build_deployment": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

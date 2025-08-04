@@ -45,6 +45,9 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "userRole": {
+      "type": "string"
     }
   }
 }

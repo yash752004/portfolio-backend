@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_stak_data_bases",
+  "info": {
+    "displayName": "dataBase"
+  },
+  "options": {},
+  "attributes": {
+    "dataBase": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

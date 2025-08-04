@@ -443,6 +443,7 @@ export interface ApiContactContact extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    userRole: Schema.Attribute.String;
   };
 }
 
@@ -553,7 +554,7 @@ export interface ApiProjectsProjects extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface ApiTechStackTechStack extends Struct.CollectionTypeSchema {
+export interface ApiTechStackTechStack extends Struct.SingleTypeSchema {
   collectionName: 'tech_stacks';
   info: {
     displayName: 'TechStack';
@@ -565,10 +566,16 @@ export interface ApiTechStackTechStack extends Struct.CollectionTypeSchema {
   };
   attributes: {
     backEnd: Schema.Attribute.Component<'stak.backend-stack', true>;
-    cloudDev: Schema.Attribute.Component<'stak.cloud-end-stack', true>;
+    build_deployment: Schema.Attribute.Component<
+      'stak.build-and-deploymen',
+      true
+    >;
+    cloudev: Schema.Attribute.Component<'stak.cloud-end-stack', true>;
+    cms: Schema.Attribute.Component<'stak.cms', true>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    database: Schema.Attribute.Component<'stak.data-base', true>;
     frontEnd: Schema.Attribute.Component<'stak.frontend-stack', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<

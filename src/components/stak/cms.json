@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_stak_cms",
+  "info": {
+    "displayName": "CMS"
+  },
+  "options": {},
+  "attributes": {
+    "cms": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

@@ -1,5 +1,5 @@
 {
-  "kind": "collectionType",
+  "kind": "singleType",
   "collectionName": "tech_stacks",
   "info": {
     "singularName": "tech-stack",
@@ -21,9 +21,24 @@
       "component": "stak.backend-stack",
       "repeatable": true
     },
-    "cloudDev": {
+    "cloudev": {
       "type": "component",
       "component": "stak.cloud-end-stack",
+      "repeatable": true
+    },
+    "database": {
+      "type": "component",
+      "component": "stak.data-base",
+      "repeatable": true
+    },
+    "cms": {
+      "type": "component",
+      "component": "stak.cms",
+      "repeatable": true
+    },
+    "build_deployment": {
+      "type": "component",
+      "component": "stak.build-and-deploymen",
       "repeatable": true
     }
   }
